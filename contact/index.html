@@ -118,20 +118,20 @@
             <div class="form-row">
               <div class="form-group">
                 <label>您的姓名 *</label>
-                <input type="text" placeholder="请输入姓名" required>
+                <input type="text" name="姓名" placeholder="请输入姓名" required>
               </div>
               <div class="form-group">
                 <label>联系电话 *</label>
-                <input type="tel" placeholder="请输入手机号" required>
+                <input type="tel" name="电话" placeholder="请输入手机号" required>
               </div>
             </div>
             <div class="form-group">
               <label>电子邮箱</label>
-              <input type="email" placeholder="请输入邮箱（选填）">
+              <input type="email" name="邮箱" placeholder="请输入邮箱（选填）">
             </div>
             <div class="form-group">
               <label>咨询类型</label>
-              <select>
+              <select name="咨询类型">
                 <option value="">请选择咨询类型</option>
                 <option value="product">产品咨询</option>
                 <option value="order">下单购买</option>
@@ -143,7 +143,7 @@
             </div>
             <div class="form-group">
               <label>留言内容 *</label>
-              <textarea placeholder="请描述您的需求，如需订购请注明产品规格和数量..." required></textarea>
+              <textarea name="留言内容" placeholder="请描述您的需求，如需订购请注明产品规格和数量..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">提交咨询</button>
           </form>
