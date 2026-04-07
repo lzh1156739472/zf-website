@@ -22,6 +22,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // --- Hero parallax ---
+  var heroBgImg = document.querySelector('.hero-bg-img');
+  if (heroBgImg) {
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          var scrollY = window.scrollY;
+          // 视差：背景慢于页面滚动，系数0.35（越小越慢）
+          heroBgImg.style.transform = heroBgImg.style.transform.replace(/translateY\([^)]*\)/, '') ||
+            heroBgImg.style.cssText; // 不覆盖 Ken Burns，用独立 wrapper
+          var heroBg = document.querySelector('.hero-bg');
+          if (heroBg) {
+            heroBg.style.transform = 'translateY(' + (scrollY * 0.35) + 'px)';
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  }
+
   // --- Scroll animations ---
   const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
   const observer = new IntersectionObserver(function(entries) {
