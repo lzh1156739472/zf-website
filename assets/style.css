@@ -296,7 +296,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: 60% 30%;
   display: block;
   /* Ken Burns：缓慢放大 + 轻微漂移 */
   animation: kenburns 18s ease-in-out infinite alternate;
