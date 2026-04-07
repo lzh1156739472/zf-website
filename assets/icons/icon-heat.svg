@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- 背景 -->
+  <rect width="80" height="80" rx="20" fill="#1a1a2e"/>
+  <!-- 火焰底部 -->
+  <path d="M40 64 Q28 64 28 54 Q28 44 34 40 Q32 48 38 46 Q36 38 42 30 Q44 38 48 36 Q52 44 52 54 Q52 64 40 64 Z" fill="#4a9eff" opacity="0.15"/>
+  <!-- 火焰轮廓 -->
+  <path d="M40 64 Q28 64 28 54 Q28 44 34 40 Q32 48 38 46 Q36 38 42 30 Q44 38 48 36 Q52 44 52 54 Q52 64 40 64 Z" stroke="#4a9eff" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- 内焰 -->
+  <path d="M40 58 Q34 56 34 50 Q34 46 37 44 Q36 48 40 47 Q40 44 42 40 Q43 44 45 43 Q47 47 46 52 Q46 58 40 58 Z" fill="#7ec8ff" opacity="0.4"/>
+  <!-- 热辐射线 -->
+  <line x1="40" y1="24" x2="40" y2="18" stroke="#4a9eff" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="52" y1="28" x2="56" y2="24" stroke="#4a9eff" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <line x1="28" y1="28" x2="24" y2="24" stroke="#4a9eff" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <!-- 速度点 -->
+  <circle cx="58" cy="42" r="2" fill="#4a9eff" opacity="0.4"/>
+  <circle cx="62" cy="48" r="1.5" fill="#4a9eff" opacity="0.3"/>
+</svg>

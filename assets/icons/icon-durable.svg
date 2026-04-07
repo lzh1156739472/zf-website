@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- 背景 -->
+  <rect width="80" height="80" rx="20" fill="#1a1a2e"/>
+  <!-- 沙漏轮廓 -->
+  <path d="M22 14 L58 14 L46 40 L58 66 L22 66 L34 40 Z" fill="none" stroke="#4a9eff" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- 上部沙（少量） -->
+  <path d="M28 18 L52 18 L46 30 L34 30 Z" fill="#4a9eff" opacity="0.2"/>
+  <!-- 下部沙（大量） -->
+  <path d="M34 50 L46 50 L52 62 L28 62 Z" fill="#4a9eff" opacity="0.35"/>
+  <!-- 中间颈部沙流 -->
+  <line x1="40" y1="34" x2="40" y2="46" stroke="#7ec8ff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <!-- 装饰：传代符号（无限符号小版） -->
+  <path d="M32 40 Q35 37 40 40 Q45 43 48 40" stroke="#4a9eff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- 光晕 -->
+  <circle cx="40" cy="40" r="4" fill="#4a9eff" opacity="0.1"/>
+</svg>

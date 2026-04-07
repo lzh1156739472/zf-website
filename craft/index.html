@@ -15,7 +15,22 @@
   <nav class="navbar">
     <div class="nav-inner">
       <a href="../" class="nav-logo">
-        <div class="logo-icon">峰</div>
+        <div class="logo-icon-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
+            <rect width="44" height="44" rx="11" fill="url(#lg_nav)"/>
+            <defs>
+              <linearGradient id="lg_nav" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#0066cc"/>
+                <stop offset="100%" stop-color="#5533ff"/>
+              </linearGradient>
+            </defs>
+            <path d="M10 34 L22 12 L34 34" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M6 34 L14 22 L18 27" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M26 27 L30 22 L38 34" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M18.5 18 L22 12 L25.5 18" fill="rgba(255,255,255,0.4)" stroke="none"/>
+            <path d="M8 34 Q8 40 22 40 Q36 40 36 34" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
         <span>珠峰实业</span>
       </a>
       <div class="nav-links">
@@ -162,17 +177,64 @@
       </div>
       <div class="feature-grid">
         <div class="feature-card" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.08);">
-          <div class="icon">📐</div>
+          <div class="icon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+              <rect width="80" height="80" rx="20" fill="#162040"/>
+              <!-- 铁分子晶格结构 -->
+              <circle cx="40" cy="40" r="5" fill="#4a9eff" opacity="0.9"/>
+              <circle cx="22" cy="28" r="4" fill="#4a9eff" opacity="0.7"/>
+              <circle cx="58" cy="28" r="4" fill="#4a9eff" opacity="0.7"/>
+              <circle cx="22" cy="52" r="4" fill="#4a9eff" opacity="0.7"/>
+              <circle cx="58" cy="52" r="4" fill="#4a9eff" opacity="0.7"/>
+              <circle cx="40" cy="18" r="3.5" fill="#7ec8ff" opacity="0.6"/>
+              <circle cx="40" cy="62" r="3.5" fill="#7ec8ff" opacity="0.6"/>
+              <!-- 晶格连线 -->
+              <line x1="40" y1="40" x2="22" y2="28" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+              <line x1="40" y1="40" x2="58" y2="28" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+              <line x1="40" y1="40" x2="22" y2="52" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+              <line x1="40" y1="40" x2="58" y2="52" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+              <line x1="40" y1="40" x2="40" y2="18" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+              <line x1="40" y1="40" x2="40" y2="62" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+              <!-- 外圈 -->
+              <circle cx="40" cy="40" r="28" fill="none" stroke="#4a9eff" stroke-width="1" opacity="0.2" stroke-dasharray="4 4"/>
+            </svg>
+          </div>
           <h3 style="color:#fff;">密度提升</h3>
           <p style="color:rgba(255,255,255,0.6);">反复锻打使铁分子排列更加紧密，锅面密度远高于机器冲压锅具，形成光滑如镜的表面。</p>
         </div>
         <div class="feature-card" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.08);">
-          <div class="icon">🎯</div>
+          <div class="icon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+              <rect width="80" height="80" rx="20" fill="#162040"/>
+              <!-- 鸡蛋煎不粘 -->
+              <ellipse cx="40" cy="50" rx="22" ry="12" fill="#4a9eff" opacity="0.12" stroke="#4a9eff" stroke-width="2"/>
+              <ellipse cx="40" cy="46" rx="10" ry="7" fill="#ffd066" opacity="0.5"/>
+              <ellipse cx="40" cy="45" rx="6" ry="4.5" fill="#ffd066" opacity="0.6"/>
+              <!-- 水珠不沾 -->
+              <circle cx="24" cy="38" r="4" fill="#4a9eff" opacity="0.7"/>
+              <circle cx="56" cy="36" r="3.5" fill="#4a9eff" opacity="0.7"/>
+              <!-- 箭头弹开 -->
+              <path d="M24 42 L20 48" stroke="#4a9eff" stroke-width="1.8" stroke-linecap="round" opacity="0.8"/>
+              <path d="M56 40 L60 46" stroke="#4a9eff" stroke-width="1.8" stroke-linecap="round" opacity="0.8"/>
+              <!-- 锅面光泽线 -->
+              <path d="M18 52 Q40 48 62 52" stroke="#7ec8ff" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            </svg>
+          </div>
           <h3 style="color:#fff;">物理不粘</h3>
           <p style="color:rgba(255,255,255,0.6);">极致光滑的锅面加上龙鳞锤纹，形成天然的不粘效果。清水煎蛋、不放油也能丝毫不粘。</p>
         </div>
         <div class="feature-card" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.08);">
-          <div class="icon">💪</div>
+          <div class="icon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+              <rect width="80" height="80" rx="20" fill="#162040"/>
+              <!-- 肌肉/强度符号：盾牌+闪电 -->
+              <path d="M40 14 L55 20 L55 36 Q55 50 40 60 Q25 50 25 36 L25 20 Z" fill="#4a9eff" opacity="0.1" stroke="#4a9eff" stroke-width="2.2" stroke-linejoin="round"/>
+              <!-- 闪电 -->
+              <path d="M44 24 L36 40 L43 40 L37 56 L50 36 L43 36 Z" fill="#7ec8ff" opacity="0.8"/>
+              <!-- 光晕 -->
+              <circle cx="40" cy="40" r="18" fill="none" stroke="#4a9eff" stroke-width="1" opacity="0.15" stroke-dasharray="3 5"/>
+            </svg>
+          </div>
           <h3 style="color:#fff;">结构强化</h3>
           <p style="color:rgba(255,255,255,0.6);">锻打过程是对铁板的"锻炼"，如同打铁成钢。锻打后的锅体强度和韧性远高于未经锻打的原材料。</p>
         </div>
@@ -189,17 +251,40 @@
       </div>
       <div class="feature-grid">
         <div class="feature-card">
-          <div class="icon">1️⃣</div>
+          <div class="icon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+              <rect width="80" height="80" rx="20" fill="#0d1b3e"/>
+              <!-- 圆圈数字1 -->
+              <circle cx="40" cy="40" r="24" fill="none" stroke="#4a9eff" stroke-width="2.5"/>
+              <text x="40" y="48" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#4a9eff" text-anchor="middle">1</text>
+              <!-- 装饰弧 -->
+              <path d="M20 40 A20 20 0 0 1 60 40" fill="none" stroke="#7ec8ff" stroke-width="1" opacity="0.3" stroke-dasharray="3 4"/>
+            </svg>
+          </div>
           <h3>开锅</h3>
           <p>新锅先用清水洗净，中小火加热至锅面变色，倒入食用油用厨房纸均匀涂抹，反复3次，静置一晚即可使用。</p>
         </div>
         <div class="feature-card">
-          <div class="icon">2️⃣</div>
+          <div class="icon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+              <rect width="80" height="80" rx="20" fill="#0d1b3e"/>
+              <circle cx="40" cy="40" r="24" fill="none" stroke="#4a9eff" stroke-width="2.5"/>
+              <text x="40" y="48" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#4a9eff" text-anchor="middle">2</text>
+              <path d="M20 40 A20 20 0 0 1 60 40" fill="none" stroke="#7ec8ff" stroke-width="1" opacity="0.3" stroke-dasharray="3 4"/>
+            </svg>
+          </div>
           <h3>日常使用</h3>
           <p>大火热锅再放油，避免冷锅冷水。烹饪后趁热用热水和软布清洗，不要用洗洁精，以免破坏油膜层。</p>
         </div>
         <div class="feature-card">
-          <div class="icon">3️⃣</div>
+          <div class="icon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+              <rect width="80" height="80" rx="20" fill="#0d1b3e"/>
+              <circle cx="40" cy="40" r="24" fill="none" stroke="#4a9eff" stroke-width="2.5"/>
+              <text x="40" y="48" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#4a9eff" text-anchor="middle">3</text>
+              <path d="M20 40 A20 20 0 0 1 60 40" fill="none" stroke="#7ec8ff" stroke-width="1" opacity="0.3" stroke-dasharray="3 4"/>
+            </svg>
+          </div>
           <h3>日常养护</h3>
           <p>洗净后擦干水分，涂薄薄一层食用油，防止生锈。如果出现轻微锈迹，用钢丝球擦除后重新开锅即可。</p>
         </div>

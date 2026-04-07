@@ -123,6 +123,26 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
   font-weight: 700;
 }
 
+.nav-logo .logo-icon-svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 102, 204, 0.35);
+  transition: box-shadow var(--transition);
+  flex-shrink: 0;
+}
+
+.nav-logo .logo-icon-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.nav-logo:hover .logo-icon-svg {
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.5);
+}
+
 .nav-logo span {
   font-family: var(--font-cn);
   font-size: 1.15rem;
@@ -411,6 +431,27 @@ section.bg-section {
   justify-content: center;
   font-size: 28px;
   color: #fff;
+}
+
+.feature-card .icon-svg {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 24px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.25);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.feature-card .icon-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.feature-card:hover .icon-svg {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 14px 36px rgba(0, 102, 204, 0.35);
 }
 
 .feature-card h3 {

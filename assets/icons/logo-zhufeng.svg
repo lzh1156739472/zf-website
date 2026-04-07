@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- Logo图形部分：山峰 + 铁锅融合 -->
+  <g transform="translate(0, 0)">
+    <!-- 外圆框 -->
+    <circle cx="30" cy="30" r="26" fill="#0a0a18" stroke="#0066cc" stroke-width="1.5"/>
+    <!-- 山峰轮廓（三座峰，中峰最高） -->
+    <path d="M10 42 L20 24 L30 14 L40 24 L50 42" fill="none" stroke="#4a9eff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" opacity="0"/>
+    <!-- 主峰（珠峰） -->
+    <path d="M18 40 L30 16 L42 40" fill="none" stroke="#4a9eff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- 左侧小峰 -->
+    <path d="M12 40 L20 28 L26 35" fill="none" stroke="#4a9eff" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.7"/>
+    <!-- 右侧小峰 -->
+    <path d="M34 35 L40 28 L48 40" fill="none" stroke="#4a9eff" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" opacity="0.7"/>
+    <!-- 雪线 -->
+    <path d="M25 22 L30 16 L35 22" fill="#7ec8ff" opacity="0.6" stroke="none"/>
+    <path d="M25 22 Q30 24 35 22" fill="none" stroke="#7ec8ff" stroke-width="1" opacity="0.5"/>
+    <!-- 底部铁锅弧线（融合元素） -->
+    <path d="M14 40 Q14 48 30 48 Q46 48 46 40" fill="none" stroke="#4a9eff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+    <!-- 把手 -->
+    <path d="M46 42 L51 40" stroke="#4a9eff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M46 45 L51 45" stroke="#4a9eff" stroke-width="2" stroke-linecap="round"/>
+    <!-- 光晕 -->
+    <circle cx="30" cy="30" r="26" fill="none" stroke="#0066cc" stroke-width="0.5" opacity="0.3"/>
+  </g>
+  
+  <!-- 文字部分 -->
+  <g transform="translate(65, 0)">
+    <!-- 珠峰实业 主标题 -->
+    <text x="0" y="36" font-family="'Noto Serif SC', 'STSong', serif" font-size="22" font-weight="700" fill="#0066cc" letter-spacing="4">珠峰实业</text>
+    <!-- 英文副标题 -->
+    <text x="2" y="50" font-family="'Inter', 'Arial', sans-serif" font-size="8" font-weight="500" fill="#5533ff" letter-spacing="3" opacity="0.8">ZHUFENG INDUSTRY</text>
+    <!-- 分隔线 -->
+    <line x1="0" y1="38" x2="130" y2="38" stroke="#0066cc" stroke-width="0.5" opacity="0.3"/>
+  </g>
+</svg>
