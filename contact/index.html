@@ -108,13 +108,7 @@
         <div class="contact-form">
           <h3>在线留言</h3>
           <p style="color:var(--color-text-light); font-size:0.88rem; margin-bottom:24px;">填写以下表单，我们会尽快与您联系。</p>
-          <form action="https://formsubmit.co/lzh1156739472@gmail.com" method="POST">
-            <!-- Formsubmit 配置 -->
-            <input type="hidden" name="_subject" value="珠峰实业 - 新的客户咨询">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://zf-website.vercel.app/contact/">
-            <input type="hidden" name="_template" value="table">
-            <input type="text" name="_honey" style="display:none">
+          <form id="contactForm">
             <div class="form-row">
               <div class="form-group">
                 <label>您的姓名 *</label>
@@ -133,19 +127,20 @@
               <label>咨询类型</label>
               <select name="咨询类型">
                 <option value="">请选择咨询类型</option>
-                <option value="product">产品咨询</option>
-                <option value="order">下单购买</option>
-                <option value="custom">企业定制</option>
-                <option value="wholesale">批量采购</option>
-                <option value="gift">礼品团购</option>
-                <option value="other">其他</option>
+                <option value="产品咨询">产品咨询</option>
+                <option value="下单购买">下单购买</option>
+                <option value="企业定制">企业定制</option>
+                <option value="批量采购">批量采购</option>
+                <option value="礼品团购">礼品团购</option>
+                <option value="其他">其他</option>
               </select>
             </div>
             <div class="form-group">
               <label>留言内容 *</label>
               <textarea name="留言内容" placeholder="请描述您的需求，如需订购请注明产品规格和数量..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">提交咨询</button>
+            <button type="submit" id="submitBtn" class="btn btn-primary" style="width:100%; justify-content:center;">提交咨询</button>
+            <p id="formMsg" style="display:none; text-align:center; margin-top:16px; padding:12px; border-radius:8px; font-size:0.9rem;"></p>
           </form>
         </div>
       </div>
@@ -246,5 +241,45 @@
   </footer>
 
   <script src="../assets/main.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const msg = document.getElementById('formMsg');
+      const form = this;
+
+      btn.disabled = true;
+      btn.textContent = '提交中...';
+      msg.style.display = 'none';
+
+      try {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxsF7TmdPRHDA4NWumGrPGjA_TakzHGvT8sqMoJ0jGf0p7XBJOmnFBKE6VEv8EQj0CogA/exec';
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+
+        const res = await fetch(scriptURL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        msg.style.display = 'block';
+        msg.style.background = '#f0fdf4';
+        msg.style.color = '#166534';
+        msg.textContent = '✅ 提交成功！我们会尽快与您联系。';
+        form.reset();
+      } catch (err) {
+        msg.style.display = 'block';
+        msg.style.background = '#fef2f2';
+        msg.style.color = '#991b1b';
+        msg.textContent = '❌ 提交失败，请稍后重试或直接致电联系我们。';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = '提交咨询';
+      }
+    });
+  </script>
 </body>
 </html>
