@@ -85,35 +85,18 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
   left: 0;
   right: 0;
   z-index: 1000;
-  /* 初始：透明，Hero背景上 */
-  background: transparent;
-  backdrop-filter: none;
-  border-bottom: 1px solid transparent;
-  transition: background 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
-}
-
-/* 滚动后：白底毛玻璃 */
-.navbar.scrolled {
-  background: rgba(255, 255, 255, 0.97);
+  /* 始终白底毛玻璃，确保导航文字始终可读 */
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  transition: background 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
-/* 导航链接：Hero上白色，滚动后深色 */
-.navbar:not(.scrolled) .nav-links a {
-  color: rgba(255, 255, 255, 0.88);
-}
-.navbar:not(.scrolled) .nav-links a:hover,
-.navbar:not(.scrolled) .nav-links a.active {
-  color: #fff;
-}
-.navbar:not(.scrolled) .nav-logo span {
-  color: rgba(255, 255, 255, 0.95);
-}
-.navbar:not(.scrolled) .nav-toggle span {
-  background: rgba(255, 255, 255, 0.9);
+/* 滚动后增强背景 */
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.97);
 }
 
 .nav-inner {
